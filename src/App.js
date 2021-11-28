@@ -6,7 +6,7 @@ import NotFound from './pages/NotFound/NotFound';
 import Post from './pages/Post/Post';
 
 import Private from './Components/PrivateRoute/PrivateRoute';
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './App.css';
 import Favorites from './pages/Favorites/Favorites';
