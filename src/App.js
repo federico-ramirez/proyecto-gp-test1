@@ -14,7 +14,7 @@ import Favorites from './pages/Favorites/Favorites';
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>        
         <Route path="/login" element={<Login />} />
         <Route path="/redirect" element={<RedirectUser />}/>
@@ -25,7 +25,7 @@ function App() {
         <Route path="/post" element={<Post />} />
         <Route path="/favorites" element={<Favorites />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
