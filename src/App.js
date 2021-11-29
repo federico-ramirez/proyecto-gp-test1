@@ -6,7 +6,7 @@ import NotFound from './pages/NotFound/NotFound';
 import Post from './pages/Post/Post';
 
 import Private from './Components/PrivateRoute/PrivateRoute';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import './App.css';
 import Favorites from './pages/Favorites/Favorites';
@@ -14,7 +14,7 @@ import Favorites from './pages/Favorites/Favorites';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>        
         <Route path="/login" element={<Login />} />
         <Route path="/redirect" element={<RedirectUser />}/>
@@ -25,7 +25,7 @@ function App() {
         <Route path="/post" element={<Post />} />
         <Route path="/favorites" element={<Favorites />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
